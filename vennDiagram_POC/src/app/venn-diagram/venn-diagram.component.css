@@ -1,0 +1,47 @@
+
+/* Tooltip Container */
+.tooltip-container {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  /* Export Container */
+  .export-container {
+    position: absolute;
+    pointer-events: auto; /* Ensure the button itself is clickable */
+    z-index: 1000; /* High z-index to ensure visibility */
+  }
+  
+  /* Export Button */
+  .export-button {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Higher than container */
+    pointer-events: auto; /* Ensure the button itself is clickable */
+  }
+  
+  /* Excel Icon */
+  .excel-icon {
+    width: 35px;
+    height: 35px;
+    transition: width 0.3s, height 0.3s;
+  }
+  
+  .export-button:hover  .excel-expansion {
+    width: 70px;
+    height: 35px;
+  }
+  .card{
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+    
+  }
